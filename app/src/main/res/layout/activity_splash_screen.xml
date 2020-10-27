@@ -7,12 +7,57 @@
     tools:context=".SplashScreen">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgSplashScreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/splashscreen" />
+        app:srcCompat="@drawable/splash"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/todo" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="248dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/virus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgSplashScreen" />
+
+    <TextView
+        android:id="@+id/txtSplashNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/splashNome"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtSplashVersion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView"
+        app:layout_constraintVertical_bias="0.355" />
+
+    <TextView
+        android:id="@+id/txtSplashVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/splashVersion"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="@+id/imgSplashScreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Covid App</string>
+    <string name="splashNome">Corona App</string>
+    <string name="splashVersion">Alpha version</string>
     <string name="dicas">Tudo o que precisa é ficar em casa.</string>
     <string name="todo">TODO</string>
     <string name="sintomas">Sintomas</string>
@@ -17,4 +19,8 @@
     <string name="txtOlhos2"> As mãos tocam muitas superfícies, uma vez contaminadas, as mãos podem transferir o vírus para os olhos, nariz ou boca.</string>
     <string name="txtContato">Evite contato direto e aglomerações</string>
     <string name="txtContato2">Evite contato físico como apertos de mãos, beijos e abraços</string>
+    <string name="todo">TODO</string>
+    <string name="btnSaudavel">Sim</string>
+    <string name="btnDoente">Não</string>
+    <string name="txtDoente">Você está se sentindo bem hoje?</string>
 </resources>
