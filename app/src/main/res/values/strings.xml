@@ -3,4 +3,9 @@
     <string name="dicas">Tudo o que precisa é ficar em casa.</string>
     <string name="todo">TODO</string>
     <string name="sintomas">Sintomas</string>
+    <string name="febre">Febre</string>
+    <string name="tosse">Tosse</string>
+    <string name="dorcabeca">Dor de Cabeça</string>
+    <string name="garganta">Dor de Garganta</string>
+
 </resources>
