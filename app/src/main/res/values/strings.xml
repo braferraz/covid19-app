@@ -19,8 +19,18 @@
     <string name="txtOlhos2"> As mãos tocam muitas superfícies, uma vez contaminadas, as mãos podem transferir o vírus para os olhos, nariz ou boca.</string>
     <string name="txtContato">Evite contato direto e aglomerações</string>
     <string name="txtContato2">Evite contato físico como apertos de mãos, beijos e abraços</string>
-    <string name="todo">TODO</string>
     <string name="btnSaudavel">Sim</string>
     <string name="btnDoente">Não</string>
     <string name="txtDoente">Você está se sentindo bem hoje?</string>
+    <string name="txtQuestionario">Preencha o questionário</string>
+    <string name="edNome">Nome</string>
+    <string name="edSobrenome">Sobrenome</string>
+    <string name="edEmail">Email</string>
+    <string name="edTelefone">Telefone</string>
+    <string name="txtSintomas">Marque os sintomas que você anda sentindo ultimamente</string>
+    <string name="paladar">Perda no Paladar/Olfato</string>
+    <string name="respiracao">Dificuldades ao respirar</string>
+    <string name="falaMovimento">Perda de fala ou movimento</string>
+    <string name="btnEnviar">Enviar</string>
+
 </resources>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="questionario"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -19,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:background="@drawable/corona"
-                android:backgroundTint="#5C6BC0"
+                android:backgroundTint="@color/design_default_color_primary_dark"
                 android:backgroundTintMode="multiply">
 
                 <TextView
@@ -40,20 +41,21 @@
                     android:id="@+id/btnDoente"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="80dp"
                     android:layout_marginBottom="16dp"
                     android:backgroundTint="#AD1457"
                     android:fontFamily="@font/poppins_semibold"
+                    android:onClick="questionario"
                     android:text="@string/btnDoente"
                     android:textColor="#FFFFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.308"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <Button
                     android:id="@+id/btnSaudavel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="32dp"
                     android:layout_marginBottom="16dp"
                     android:backgroundTint="#33B539"
                     android:fontFamily="@font/poppins_semibold"
@@ -61,8 +63,8 @@
                     android:textColor="#FBFBFB"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.533"
-                    app:layout_constraintStart_toEndOf="@+id/btnDoente" />
+                    app:layout_constraintHorizontal_bias="0.695"
+                    app:layout_constraintStart_toStartOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

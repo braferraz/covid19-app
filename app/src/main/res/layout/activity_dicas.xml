@@ -26,6 +26,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="201dp"
                 android:background="@color/cinza"
+                android:backgroundTint="@color/design_default_color_primary_dark"
+                android:backgroundTintMode="multiply"
                 android:contentDescription="TODO"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -207,7 +209,8 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.384">
 
                     <ImageView
                         android:id="@+id/imgMascara"
@@ -215,7 +218,7 @@
                         android:layout_height="95dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.048"
+                        app:layout_constraintHorizontal_bias="0.03"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="1.0"
@@ -223,25 +226,27 @@
 
                     <TextView
                         android:id="@+id/txtMascara"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="96dp"
+                        android:layout_width="99dp"
+                        android:layout_height="19dp"
                         android:fontFamily="@font/poppins_medium"
                         android:text="@string/mascara"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.01"
+                        app:layout_constraintStart_toEndOf="@+id/imgMascara"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.162" />
+                        app:layout_constraintVertical_bias="0.129" />
 
                     <TextView
                         android:id="@+id/txtMascara2"
-                        android:layout_width="310dp"
-                        android:layout_height="61dp"
-                        android:layout_marginStart="96dp"
+                        android:layout_width="313dp"
+                        android:layout_height="67dp"
                         android:fontFamily="@font/poppins_light"
                         android:text="@string/txtmascara"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.05"
+                        app:layout_constraintStart_toEndOf="@+id/imgMascara"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="1.0" />
 
@@ -258,28 +263,30 @@
 
                     <TextView
                         android:id="@+id/txtHigiene"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="96dp"
+                        android:layout_width="98dp"
+                        android:layout_height="16dp"
                         android:fontFamily="@font/poppins_medium"
                         android:text="@string/txtMaos"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imgHigiene"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.162" />
+                        app:layout_constraintVertical_bias="0.262" />
 
                     <TextView
                         android:id="@+id/txtHigiene2"
-                        android:layout_width="310dp"
-                        android:layout_height="55dp"
-                        android:layout_marginStart="96dp"
+                        android:layout_width="289dp"
+                        android:layout_height="59dp"
                         android:fontFamily="@font/poppins_light"
                         android:text="@string/txtMaos2"
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imgHigiene"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.804" />
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <ImageView
                         android:id="@+id/imgHigiene"
@@ -305,28 +312,28 @@
 
                     <TextView
                         android:id="@+id/txtOlhos"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="96dp"
+                        android:layout_width="241dp"
+                        android:layout_height="19dp"
                         android:fontFamily="@font/poppins_medium"
                         android:text="@string/txtOlhos"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imgOlhos"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.19999999" />
+                        app:layout_constraintVertical_bias="0.3" />
 
                     <TextView
                         android:id="@+id/txtOlhos2"
-                        android:layout_width="310dp"
-                        android:layout_height="55dp"
-                        android:layout_marginStart="96dp"
+                        android:layout_width="303dp"
+                        android:layout_height="54dp"
                         android:fontFamily="@font/poppins_light"
                         android:text="@string/txtOlhos2"
                         android:textSize="12sp"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgOlhos"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.87" />
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <ImageView
                         android:id="@+id/imgOlhos"
@@ -354,28 +361,16 @@
 
                     <TextView
                         android:id="@+id/txtContato"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="96dp"
+                        android:layout_width="260dp"
+                        android:layout_height="16dp"
                         android:fontFamily="@font/poppins_medium"
                         android:text="@string/txtContato"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imgContato"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.256" />
-
-                    <TextView
-                        android:id="@+id/txtContato2"
-                        android:layout_width="310dp"
-                        android:layout_height="55dp"
-                        android:layout_marginStart="96dp"
-                        android:fontFamily="@font/poppins_light"
-                        android:text="@string/txtContato2"
-                        android:textSize="12sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.97" />
+                        app:layout_constraintVertical_bias="0.32" />
 
                     <ImageView
                         android:id="@+id/imgContato"
@@ -388,6 +383,18 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="1.0"
                         app:srcCompat="@drawable/contato" />
+
+                    <TextView
+                        android:id="@+id/txtContato2"
+                        android:layout_width="310dp"
+                        android:layout_height="55dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/txtContato2"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imgContato"
+                        app:layout_constraintTop_toBottomOf="@+id/txtContato"
+                        app:layout_constraintVertical_bias="0.39" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

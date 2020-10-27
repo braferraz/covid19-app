@@ -10,19 +10,17 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class questionario extends AppCompatActivity {
 
-    private Button button, btnQuestionario;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_questionario);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
         bottomNavigationView.setSelectedItemId(R.id.home);
@@ -33,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.dashboard:
                         startActivity(new Intent(getApplicationContext()
-                        ,EstadoAtual.class));
+                                ,EstadoAtual.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.home:
@@ -45,28 +43,22 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-        button = findViewById(R.id.btnSaudavel);
+
+        button = findViewById(R.id.btnEnviar);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder builder;
-                builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setTitle("Parabéns!");
-                builder.setMessage("Continue contribuindo ficando em casa para evitar a disseminação do virus! #FiqueemCasa");
+                builder = new AlertDialog.Builder(questionario.this);
+                builder.setTitle("Obrigado!");
+                builder.setMessage("Agradecemos pelas informações");
                 builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        finish();
                     }
                 });
                 builder.show();
-            }
-        });
-        btnQuestionario = findViewById(R.id.btnDoente);
-        btnQuestionario.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), questionario.class);
-                startActivity(intent);
             }
         });
     }
