@@ -103,7 +103,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkOlfato3" />
+            app:layout_constraintTop_toBottomOf="@+id/checkFala" />
 
         <TextView
             android:id="@+id/txtFrmSintomas"
@@ -133,7 +133,7 @@
             app:layout_constraintTop_toBottomOf="@+id/checkDorGarganta" />
 
         <CheckBox
-            android:id="@+id/checkOlfato2"
+            android:id="@+id/checkRespiracao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -157,7 +157,7 @@
             app:layout_constraintTop_toBottomOf="@+id/checkDorCabeca" />
 
         <CheckBox
-            android:id="@+id/checkOlfato3"
+            android:id="@+id/checkFala"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -166,7 +166,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkOlfato2" />
+            app:layout_constraintTop_toBottomOf="@+id/checkRespiracao" />
 
         <CheckBox
             android:id="@+id/checkOlfato"
