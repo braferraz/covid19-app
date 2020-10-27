@@ -4,24 +4,25 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MenuItem;
+import android.view.View;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.ProgressBar;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class EstadoAtual extends AppCompatActivity {
 
-
+private ProgressBar mProgressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-
         //Menu de navegação
         setContentView(R.layout.activity_estado_atual);
 
@@ -50,10 +51,30 @@ public class EstadoAtual extends AppCompatActivity {
         });
 
         WebView web = findViewById(R.id.webView);
+        mProgressBar = findViewById(R.id.progressBar);
+        mProgressBar.setMax(100);
         WebSettings webSettings = web.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        web.setWebViewClient(new Callback());
+        web.setWebViewClient(new Callback(){
+            @Override
+            public void onPageStarted(WebView view, String url, Bitmap favicon) {
+                super.onPageStarted(view, url, favicon);
+                mProgressBar.setVisibility(View.VISIBLE);
+                setTitle("Carregando...");
+            }
+
+             @Override
+             public void onPageFinished(WebView view, String url) {
+                 super.onPageFinished(view, url);
+                 mProgressBar.setVisibility(View.GONE);
+                 setTitle(view.getTitle());
+             }
+         }
+
+        );
         web.loadUrl("https://covid.saude.gov.br");
+
+
     }
 
     private class Callback extends WebViewClient {
