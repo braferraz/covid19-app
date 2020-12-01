@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Covid App</string>
+    <string name="splashNome">Corona App</string>
+    <string name="splashVersion">Alpha version</string>
+    <string name="dicas">Tudo o que precisa é ficar em casa.</string>
+    <string name="todo">TODO</string>
+    <string name="sintomas">Sintomas</string>
+    <string name="febre">Febre</string>
+    <string name="tosse">Tosse</string>
+    <string name="dorcabeca">Dor de Cabeça</string>
+    <string name="garganta">Dor de Garganta</string>
+    <string name="prevencao">Prevenção</string>
+    <string name="contato">Contato</string>
+    <string name="mascara">Usar Máscara</string>
+    <string name="txtmascara">Desde o início do surto do coronavírus, alguns lugares adotaram completamente o uso de máscaras faciais.</string>
+    <string name="txtMaos">Lave as mãos</string>
+    <string name="txtMaos2">Lavar as mãos frequentemente por 20 segundos com água e sabão ou higienizá-los com álcool em gel.</string>
+    <string name="txtOlhos">Evite tocar nos olhos, nariz e boca</string>
+    <string name="txtOlhos2"> As mãos tocam muitas superfícies, uma vez contaminadas, as mãos podem transferir o vírus para os olhos, nariz ou boca.</string>
+    <string name="txtContato">Evite contato direto e aglomerações</string>
+    <string name="txtContato2">Evite contato físico como apertos de mãos, beijos e abraços</string>
+    <string name="btnSaudavel">Sim</string>
+    <string name="btnDoente">Não</string>
+    <string name="txtDoente">Você está se sentindo bem hoje?</string>
+    <string name="txtQuestionario">Preencha o questionário</string>
+    <string name="edNome">Nome</string>
+    <string name="edSobrenome">Sobrenome</string>
+    <string name="edEmail">Email</string>
+    <string name="edTelefone">Telefone</string>
+    <string name="txtSintomas">Marque os sintomas que você anda sentindo ultimamente</string>
+    <string name="paladar">Perda no Paladar/Olfato</string>
+    <string name="respiracao">Dificuldades ao respirar</string>
+    <string name="falaMovimento">Perda de fala ou movimento</string>
+    <string name="btnEnviar">Enviar</string>
+
+</resources>
